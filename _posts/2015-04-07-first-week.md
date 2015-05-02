@@ -13,10 +13,10 @@ image:
 
 Whew.  That was tough. Glad I don't have to do that again.  :)
 
-But wow I learned so much!  At the beginning of the week I was a python noob,but by the end I was looping through my dictionaries I had created and pulling out all the relevant data!\n
+But wow I learned so much!  At the beginning of the week I was a python noob,but by the end I was looping through my dictionaries I had created and pulling out all the relevant data!
 
 In this Metis program, we just dove RIGHT IN to working with data...and I mean RIGHT IN.  The instructors gave us the link to the data sets, demoed a few quick useful ways to shape the data, and after that we were off!  The data set was NYC MTA subway data which was gathered daily for every single turnstile in the city.  It had attributes such as turnstile number, station number,
-date, number of entries, and exits.  Our goal was to shape and clean the data and perform some exploratory data analysis.\n
+date, number of entries, and exits.  Our goal was to shape and clean the data and perform some exploratory data analysis.
 
 I came into this very confident...it was just a csv file with 238k rows, how hard could it be?? WRONG. Very wrong.  The challenges they asked us to complete were asking me to shape the data in ways that I was unfamiliar with.  At first, I didn't see the point, but by day 3 it was all starting to make sense to me, but that didn't mean I had a perfect data set!  Oh no, far from it.  Still plenty of work to do.  Although the more problems I came across, the more I learned.  I had never felt so frustrated in something data related before.  Get one thing working correctly, encounter another problem 5 minutes later...just like clockwork.  However, my knowledge of python was growing and growing and by the end of the week I was infinitely better!!
 
