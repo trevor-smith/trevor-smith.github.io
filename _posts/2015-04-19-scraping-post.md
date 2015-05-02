@@ -27,7 +27,7 @@ I was solving (that's the next post), but I do want to share some of my code.
 
 # Let's get scraping!
 
-First, you need to import the following packages (and install them too if you don't have):
+First, you need to import the following packages (and install them too if you don't have)
 
 {% highlight python %}
 import urllib2
@@ -41,9 +41,6 @@ a webpage that had all movies listed.  There were 135 pages to go through so I q
 found the url structure and wrote some code to loop through them all
 
 {% highlight python %}
-# getting the list of all the domestic urls to scrape
-# this will help get us the list of movies and their respective id's
-# with these page id's we can construct the url list to scrape
 url_domestic_list = []
 page_number = range(0,135)
 for i in page_number:
@@ -65,17 +62,12 @@ movie_url_to_scrape = []
 for url in url_domestic_list:
     page_domestic = urllib2.urlopen(url)
     soup_domestic = BeautifulSoup(page_domestic)
-    # need to encode this as utf-8 or else it throws error
-    # for the a attribute, look for hrefs that start with '/movies/?'
     href_movie_tags = [(a.attrs.get('href')).encode('utf-8') for a in soup_domestic.select('a[href^/movies/?]')]
-    # splitting the hrefs based on movie id
     href_movie_tags_split = [i.split('id', 1) for i in href_movie_tags]
-    # create a list of only the movie ids
     for i in href_movie_tags_split[:-1]:
         id_list.append(i[1])
     id_list_unique = set(id_list)
 	# creating the list of movie urls that we will be scraping
-	# this is done by using a templated url and adding the id to make a valid movie url
     for id in id_list:
         movie_url_to_scrape.append("http://www.boxofficemojo.com/movies/?id" + id)
     movie_url_to_scrape_unique = set(movie_url_to_scrape)
