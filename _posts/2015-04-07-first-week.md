@@ -11,13 +11,8 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-Whew.
+Whew.  That was tough. Glad I don't have to do that again.  :)
 
-That was tough.
-
-Glad I don't have to do that again.
-
-:)
 But wow I learned so much!  At the beginning of the week I was a python noob,but by the end I was looping through my dictionaries I had created and pulling out all the relevant data!\n
 
 In this Metis program, we just dove RIGHT IN to working with data...and I mean RIGHT IN.  The instructors gave us the link to the data sets, demoed a few quick useful ways to shape the data, and after that we were off!  The data set was NYC MTA subway data which was gathered daily for every single turnstile in the city.  It had attributes such as turnstile number, station number,
