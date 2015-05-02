@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Analytics for All
+title:            Data What?
 locale:           en_US
 url: http://trevor-smith.github.io             
 
@@ -27,7 +27,7 @@ kramdown:
 # Site owner
 owner:
   name: Trevor Smith
-  avatar: bio-photo.jpg
+  avatar: pic1.jpg
   bio: "Yo."
   email: trevor.stuard@gmail.com
   disqus-shortname: 
@@ -44,7 +44,7 @@ owner:
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: trevorsmith21
   xing: #username
-  instagram: #username
+  instagram: trebber_
   lastfm: #username
   tumblr: #username
   pinterest: #username
