@@ -47,6 +47,23 @@ In the image below, we can see what these metrics look like for China from 2005 
   <a href="/images/china_sample.png"><img src="/images/china_sample.png"></a>
 </figure>
 
+Sort of.
+
+In the case of China, as was the case for many developing countries, GDP per capita is a good predictor of foreign revenue because these developing countries start to go from having no discretionary income to having some discretionary income, so that in part helps to explain the spike in movie revenues.  For all countries, developed or developing, population is a key factor one must consider when predicting foreign revenues.  Lastly, U.S. favorability index DID NOT have a significant impact in these tests.  This shocked and saddened me a bit because this was the feature I was most excited about.  This doesn't mean that there isn't some underlying relationship between U.S. favorability and movie revenue for that country, but for now we cannot say that there is.
+
+Some other interesting things I learned when building predictive models for each country:
+
+- you can't generalize a model for every country! I ended up having to build a model for every single country because different things impact foreign revenue for different countries.
+- fantasy, animation, action were the most country agnostic genres
+- foreign genre was country dependent AKA if the American movie was about something in their country, revenue would be higher
+- Poland seemed to prefer Dramas...this feature would positively impact revenue in Poland
+- Germany prefers g rated movies...this feature would positively impact revenue in Poland
+
+Until next time...
+
+<figure>
+  <a href="/images/fast_and_furious.png"><img src="/images/fast_and_furious.png"></a>
+</figure>
 
 
 ~ Trevor
