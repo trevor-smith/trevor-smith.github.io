@@ -14,7 +14,7 @@ As you know from my last post, I had scraped A LOT of movie data from BoxOfficeM
 
 (shameless Emily Blunt picture)
 <figure>
-  <a href="/images/emily_blunt.png"><img style="display:block; margin: 0 auto;"src="/images/emily_blunt.png"></a>
+  <a href="/images/emily_blunt.png"><img style="display:block; margin: 0 auto;" src="/images/emily_blunt.png"></a>
 </figure>
 
 To start this problem, I did an initial review of my data to see what I was working with.  Overall, the data was pretty clean because my web scraping was robust, but I did have to link two data sets together.  Luckily, in pandas this is an easy one line implementation that joined the two data sets based on their urls.  One thing I did notice during this process was that my revenue data was not normally distributed.  It had a left skew, but I was able to normalize it by doing a log transform (sample code below):
@@ -62,7 +62,7 @@ Some other interesting things I learned when building predictive models for each
 Until next time...
 
 <figure>
-  <a href="/images/fast_and_furious.png"><img src="/images/fast_and_furious.png"></a>
+  <a href="/images/fast_and_furious.png"><img style="display:block; margin: 0 auto;" src="/images/fast_and_furious.png"></a>
 </figure>
 
 
