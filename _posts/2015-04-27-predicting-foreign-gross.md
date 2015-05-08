@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predicting Foreign Revenue for American Movies
+title: Predicting foreign revenue for american movies
 excerpt: "Exploring movie tastes for countries around the world"
 modified: 2015-04-27
 tags: [intro, beginner, jekyll, tutorial]
