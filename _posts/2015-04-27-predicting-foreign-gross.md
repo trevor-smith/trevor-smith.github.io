@@ -12,6 +12,10 @@ image:
 ---
 As you know from my last post, I had scraped A LOT of movie data from BoxOfficeMojo...but I was unsure what to do with it.  After reviewing the data I had scraped, the problems that seemed the most interesting to me were related to predicting revenue, but predicting how a movie would do in the United States did not seem as interesting to me.  I wanted to solve a prediction problem that had global implications.  I finally settled on trying to predict how much money an American movie would gross in every single country it was released.  This excited me, although I knew it would be challenging!
 
+(shameless Emily Blunt picture)
+<a href="/images/emily_bluntpng"><img src="/images/emily_blunt.png"></a>
+
+
 To start this problem, I did an initial review of my data to see what I was working with.  Overall, the data was pretty clean because my web scraping was robust, but I did have to link two data sets together.  Luckily, in pandas this is an easy one line implementation that joined the two data sets based on their urls.  One thing I did notice during this process was that my revenue data was not normally distributed.  It had a left skew, but I was able to normalize it by doing a log transform (sample code below):
 
 {% highlight python %}
