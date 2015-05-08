@@ -18,14 +18,14 @@ To start this problem, I did an initial review of my data to see what I was work
 df.Revenue.hist()
 # it has a left skew, so let's transform
 df.Revenue = df.Revenue.apply(np.log)
-df.Revenue.hist()
 # rerun histogram and now data looks normally distributed
-{% endhighlight %}
+df.Revenue.hist()
 
+{% endhighlight %}
 <figure class="half">
     <a href="/images/revenue.png"><img src="/images/revenue.png"></a>
     <a href="/images/revenue_log.png"><img src="/images/revenue_log.png"></a>
-    <figcaption>Left: no log transform Right: log transform</figcaption>
+    <figcaption>     Left: no log transform                     Right: log transform</figcaption>
 </figure>
 
 This transformation greatly helped the predictive power of my linear regrssion.  The features that I was working with initially were standard movie revenue features such as movie budget, genre, MPAA rating, and release date.  These were great at predicting domestic movie revenue, but there were still many missing pieces for country by country prediction so I brainstormed and came up with a few features I thought would be predictive:
