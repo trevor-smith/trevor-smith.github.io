@@ -14,7 +14,7 @@ As you know from my last post, I had scraped A LOT of movie data from BoxOfficeM
 
 (shameless Emily Blunt picture)
 <figure>
-  <a href="/images/emily_blunt.png"><img src="/images/emily_blunt.png"></a>
+  <a href="/images/emily_blunt.png"><img style="display:block; margin: 0 auto;"src="/images/emily_blunt.png"></a>
 </figure>
 
 To start this problem, I did an initial review of my data to see what I was working with.  Overall, the data was pretty clean because my web scraping was robust, but I did have to link two data sets together.  Luckily, in pandas this is an easy one line implementation that joined the two data sets based on their urls.  One thing I did notice during this process was that my revenue data was not normally distributed.  It had a left skew, but I was able to normalize it by doing a log transform (sample code below):
@@ -33,18 +33,18 @@ df.Revenue.hist()
 </figure>
 
 
-This transformation greatly helped the predictive power of my linear regrssion.  The features that I was working with initially were standard movie revenue features such as movie budget, genre, MPAA rating, and release date.  These were great at predicting domestic movie revenue, but there were still many missing pieces for country by country prediction so I brainstormed and came up with a few features I thought would be predictive:
+This transformation greatly helped the predictive power of my linear regrssion.  The features that I was working with initially were standard movie prediction features such as movie budget, genre, MPAA rating, and release date.  These were great at predicting domestic movie revenue, but there were still many missing pieces for country by country prediction so I brainstormed and came up with a few features I thought would be predictive:
 
-- GDP per capita (worldbank.org)
-- Population (worldbank.org)
-- U.S. Favorability index (pew research center)
+- GDP per capita ([worldbank.org][1])
+- Population ([worldbank.org][1])
+- U.S. Favorability index ([pew research center][2])
 
 The reason I focused on these three features above was because I felt like they were widely available data that would impact the movie revenue a particular country would generate.  GDP per capita is important because countries with low GDP per capita will not be able to spend as much money on non-essential items.  As that GDP per capita rises, discretionary spending on other items such as movie tickets can increase.  Next, population is important because even if a country has a high GDP per capita (Luxembourg), they still do not have the population to generate high movie revenue.  Lastly, I hypothesized that how a country views the U.S. will impact whether or not they will see U.S movies.  To estimate this, I used the U.S. favorabiity index which measure the percent of a country's population that approves of the United States.
 
 In the image below, we can see what these metrics look like for China from 2005 to 2013.  Notice the variability in favorability, the upward trend in gdp, and the spike in revenue.  Would these economic factors help explain the spike in revenues for china?
 
 <figure>
-  <a href="/images/china_sample.png"><img src="/images/china_sample.png"></a>
+  <a href="/images/china_sample.png"><img style="display:block; margin: 0 auto;" src="/images/china_sample.png"></a>
 </figure>
 
 Sort of.
@@ -67,3 +67,6 @@ Until next time...
 
 
 ~ Trevor
+
+[1]: http://data.worldbank.org
+[2]: http://www.pewresearch.org/
