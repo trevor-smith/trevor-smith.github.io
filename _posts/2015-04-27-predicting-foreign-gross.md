@@ -30,8 +30,8 @@ df.Revenue.hist()
 <figure class="half">
     <a href="/images/revenue.png"><img src="/images/revenue.png"></a>
     <a href="/images/revenue_log.png"><img src="/images/revenue_log.png"></a>
-    <figcaption>     Left: no log transform                     Right: log transform</figcaption>
 </figure>
+
 
 This transformation greatly helped the predictive power of my linear regrssion.  The features that I was working with initially were standard movie revenue features such as movie budget, genre, MPAA rating, and release date.  These were great at predicting domestic movie revenue, but there were still many missing pieces for country by country prediction so I brainstormed and came up with a few features I thought would be predictive:
 
@@ -41,6 +41,11 @@ This transformation greatly helped the predictive power of my linear regrssion. 
 
 The reason I focused on these three features above was because I felt like they were widely available data that would impact the movie revenue a particular country would generate.  GDP per capita is important because countries with low GDP per capita will not be able to spend as much money on non-essential items.  As that GDP per capita rises, discretionary spending on other items such as movie tickets can increase.  Next, population is important because even if a country has a high GDP per capita (Luxembourg), they still do not have the population to generate high movie revenue.  Lastly, I hypothesized that how a country views the U.S. will impact whether or not they will see U.S movies.  To estimate this, I used the U.S. favorabiity index which measure the percent of a country's population that approves of the United States.
 
+In the image below, we can see what these metrics look like for China from 2005 to 2013.  Notice the variability in favorability, the upward trend in gdp, and the spike in revenue.  Would these economic factors help explain the spike in revenues for china?
+
+<figure>
+  <a href="/images/china.png"><img src="/images/china.png"></a>
+</figure>
 
 
 
