@@ -44,7 +44,7 @@ The reason I focused on these three features above was because I felt like they 
 In the image below, we can see what these metrics look like for China from 2005 to 2013.  Notice the variability in favorability, the upward trend in gdp, and the spike in revenue.  Would these economic factors help explain the spike in revenues for china?
 
 <figure>
-  <a href="/images/china.png"><img src="/images/china.png"></a>
+  <a href="/images/china_sample.png"><img src="/images/china_sample.png"></a>
 </figure>
 
 
