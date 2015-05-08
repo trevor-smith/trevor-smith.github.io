@@ -53,7 +53,7 @@ In the case of China, as was the case for many developing countries, GDP per cap
 
 Some other interesting things I learned when building predictive models for each country:
 
-- you can't generalize a model for every country! I ended up having to build a model for every single country because different things impact foreign revenue for different countries.
+- you can't generalize a model for every country! I ended up having to build a model for every single country because different things impact foreign revenue for different countries.  Please see [this post][3] for how I handled generating models for all countries
 - fantasy, animation, action were the most country agnostic genres
 - foreign genre was country dependent AKA if the American movie was about something in their country, revenue would be higher
 - Poland seemed to prefer Dramas...this feature would positively impact revenue in Poland
@@ -70,3 +70,4 @@ Until next time...
 
 [1]: http://data.worldbank.org
 [2]: http://www.pewresearch.org/
+[3]: http://trevor-smith.github.io/stepwise-post/
