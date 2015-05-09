@@ -39,7 +39,7 @@ for i in obj_reviews:
 df_reviews = pd.DataFrame(reviews)
 {% endhighlight %}
 
-Ok, great, now we have the reviews data in the pandas dataframe, but now what to do with it?  Well there's a few things that I did first.  I casted the unixReviewTime column to a datetime object which helps us later.  Also, you'll notice that the helpful column contains values that look like this '[53, 56]'.  The first value represents the number of helpful votes, the second represents overall votes.  This data is useful to us, but not in this form, so let's create some additional columns!
+Ok, great, now we have the reviews data in the pandas dataframe, but now what to do with it?  Well there's a few things that I did first.  I casted the unixReviewTime column to a datetime object which helps us later.  Also, you'll notice that the helpful column contains values that look like this '[56, 63]'.  The first value represents the number of helpful votes, the second represents overall votes.  This data is useful to us, but not in this form, so let's create some additional columns!
 
 {% highlight python %}
 def creating_basic_features():
