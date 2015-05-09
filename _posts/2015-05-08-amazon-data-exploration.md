@@ -103,3 +103,4 @@ The first plot below can show you how review polarity changes depending on a use
 
 [1]: http://cseweb.ucsd.edu/~jmcauley/
 [2]: http://jmcauley.ucsd.edu/data/amazon/
+[3]: http://textblob.readthedocs.org/en/dev/
