@@ -80,23 +80,26 @@ def create_textblob_features():
 Ok, so what I'm doing with all of the above is using TextBlob to extract information from each review.  The things I hypothesized that would be interesting are polarity of the reivew, subjectivity, number of words, number of sentences, words per sentence, and sentence complexity.  I'm just going to provide the code for some basic charts below, but I encourage you to play around with all the variables and find your own stories to tell!
 
 {% highlight python %}
+# these top two plots are not shown below
 df_reviews.plot(kind='scatter', x='percent_helpful', y='len_sentences')
 df_reviews.len_words.hist(bins=200)
-df_reviews.plot(kind='scatter', x='len_words', y='len_sentences')
-df_reviews.boxplot('polarity', 'overall')
-df_new2.sentence_complexity.hist(bins=20)
 
+# these two plots are shown below
+df_reviews.boxplot('polarity', 'overall')
 # bubbleplot with colour based on a feature and size based on another feature
 plt.figure(figsize=(20,10))
 plt.scatter(df_new2.overall_votes, df_new2.time_from_first_review, c=df_new2.sentence_complexity, s=df_new2.len_words, alpha=.2)
 {% endhighlight %}
 
-The first plot below can show you how review polarity changes depending on a user's rating of the product.  The second plot shows how you can create a scatterplot, but incorporate more than 2 features.
+The first plot below can show you how review polarity changes depending on a user's rating of the product.  The second plot shows how you can create a scatterplot, but incorporate more than 2 features.  This one plots number of words in the review vs the overall votes that review received.  The colour is based on the polarity of the review and the size of the bubble is based on the number of sentences.
 
-<figure>
-  <a href="/images/china_sample.png"><img style="display:block; margin: 0 auto;" src="/images/china_sample.png"></a>
+<figure class="half">
+    <a href="/images/polarity_boxplot.png"><img src="/images/polarity_boxplot.png"></a>
+    <a href="/images/cool_scatter.png"><img src="/images/cool_scatter.png"></a>
 </figure>
 
+
+Ok, well, that should be enough to get you up and running!  Tune in next week when I discuss how I actually plan to classify a review as helpful or not based on some popular machine learning techniques such as random forests, SVMs, and naive bayes classifiers.
 
 
 ~ Trevor
