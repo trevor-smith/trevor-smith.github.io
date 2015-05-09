@@ -60,7 +60,7 @@ Let's look at some histograms of these distributions:
 </figure>
 
 
-Ok, so we can see that reviews are right skewed towards 5 start ratings with each previous star rating getting less and less reviews.  Perhaps some bias in who submits reviews? Or a large percentage of fake reviews?  Next, we notice that there's a number of reviews that are not helpful at all, a low dispersion of helpfulness from 10% helpful all the way to 90% helpful, and then a significant amount of reviews that are 100% helpful.  Hmm, quite weird.  Let's explore this more in the follow up blog post, let's keep moving along with how to analyze the review data.
+Ok, so we can see that reviews are right skewed towards 5 star ratings with each previous star rating getting less and less reviews.  Perhaps some bias in who submits reviews? Or a large percentage of fake reviews?  Next, we notice that there's a number of reviews that are not helpful at all, a low dispersion of helpfulness from 10% helpful all the way to 90% helpful, and then a significant amount of reviews that are 100% helpful.  Hmm, quite weird.  Let's explore this more in the follow up blog post, let's keep moving along with how to analyze the review data.
 
 Next, it was time to start doing some basic analysis on the reviews.  For this, I have chosen to use a package called [Text Blob][3].  I'll show the code below, then explain what each feature is doing:
 
