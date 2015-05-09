@@ -22,7 +22,7 @@ Firstly, so what kind of data is this?  Well, it is user review data for Amazon 
   <a href="/images/amazon_review_sample.png"><img style="display:block; margin: 0 auto;" src="/images/amazon_review_sample.png"></a>
 </figure>
 
-As you can see, the review starts by stating how many people found the review helpful (53 of 56 in this case), how many stars out of five the user rated the product, a summary, user name, date, and finally, the actual review text.
+As you can see, the review starts by stating how many people found the review helpful (56 of 63 in this case), how many stars out of five the user rated the product, a summary, user name, date, and finally, the actual review text.
 
 Ok, so we have JSON data for 83 million reviews, so what do we do with it?? Well, what I did is just downloaded one products data and took a 500k row sample.  If you use python, you can read in the data as follows:
 
