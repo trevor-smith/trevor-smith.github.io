@@ -13,6 +13,8 @@ image:
 My name is Trevor and I'm currently a data scientist at Metis.  My background before Metis was in Marketing Analytics, specifically digital media attribution, where I helped companies and agencies optimize their online marketing campaigns.  I was focused around scalable client implementation, communicating results effectively to our clients, and for helping push our software platform forward with new innovative ideas.
 
 I am industry agnostic, I just enjoy solving challenging big data problems!  I like helping companies scale and also digging into the data to tell a compelling story.
+
+---
 ## Data Science Interests
 
 When it comes to data science, I absolutely LOVE to nerd out.  I'd rather read a statistics book or a blog post than watch the latest funny youtube video or mindlessly browse the internet.  That being said, some of my particular interests are:
