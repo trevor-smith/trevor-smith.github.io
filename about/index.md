@@ -15,6 +15,7 @@ My name is Trevor and I'm currently a data scientist at Metis.  My background be
 I am industry agnostic, I just enjoy solving challenging big data problems!  I like helping companies scale and also digging into the data to tell a compelling story.
 
 ---
+
 ## Data Science Interests
 
 When it comes to data science, I absolutely LOVE to nerd out.  I'd rather read a statistics book or a blog post than watch the latest funny youtube video or mindlessly browse the internet.  That being said, some of my particular interests are:
