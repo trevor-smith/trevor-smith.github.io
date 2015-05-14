@@ -20,7 +20,7 @@ In my last post I detailed how to read in Amazon reviews data in Python and how 
 I came across quite a few different tutorials across the web, but ultimately decided to implement what is called a 'Bag-of-Words' approach.  What this approach does is looks through all of my review text and it creates a sparse matrix of all the words.  Then your classification algorithm of choice can treat each of these words as a feature.  Let's look at an example.
 
 ### Example
-test_sentence = "Let's see how to classify this.", "This is my second one to classify"
+
 <figure>
   <a href="/images/matrix.png"><img style="display:block; margin: 0 auto;" src="/images/matrix.png"></a>
 </figure>
