@@ -22,7 +22,7 @@ I came across quite a few different tutorials across the web, but ultimately dec
 ### Example
 test_sentence = "Let's see how to classify this.", "This is my second one to classify"
 <figure>
-  <a href="/images/amazon_review_sample.png"><img style="display:block; margin: 0 auto;" src="/images/amazon_review_sample.png"></a>
+  <a href="/images/matrix.png"><img style="display:block; margin: 0 auto;" src="/images/matrix.png"></a>
 </figure>
 
 Ok, so we can see that we have two sentences above.  The first one contains six words, all of them unique.  The second sentence contains seven words, but there are three words that we saw in the first sentence so no additional columns need to be created for those three words.  Now that we have reviewed all our of reviews and put together a unique word list, we now have to go back and start filling in our matrix.  The next part of the process just involves going through each review and seeing if it contains the word in the first position of our matrix.  If yes, then we put a 1, if not, then we put a 0.  Then move on to the next word in our matrix and do the same process.  After this has been done for one review, then we move to the next review and do the same thing.  Sounds daunting right??  Thanks to Python, it isn't!
