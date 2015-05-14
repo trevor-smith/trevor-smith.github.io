@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Classifying Amazon reviews Part I
-excerpt: "A guide to getting started analyzing Amazon reviews"
+title: Classifying Amazon reviews Part II
+excerpt: "Classifying Amazon reviews as helpful or not"
 modified: 2015-05-08
 tags: [nlp, natural language processing, python, statistics, metis]
 comments: true
