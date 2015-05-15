@@ -49,20 +49,36 @@ Alright!  Using the above code we were able to create a word matrix from our tra
 
 {% highlight python %}
 """standard imports"""
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression
 
-def naive_bayes():
-    nb = MultinomialNB()
-    nb.fit(X_train, df_train.reviews_helpful)
-    nb_pred = nb.predict(X_test)
-    nb_score = nb.score(X_test, y_test)
-    return "Naive Bayes accuracy: " + str(nb_score)
+def logistic():
+    lg = LogisticRegression()
+    lg.fit(X_train, df_train.reviews_helpful)
+    lg_pred = lg.predict(X_test)
+    lg_score = lg.score(X_test, y_test)
+    return "Logistic Regression accuracy: " + str(nb_score)
 
-naive_bayes()
+logistic()
 {% endhighlight %}
 
+### What did we find out?
+
+Now that we have run this, what did our results tell us?  Well, the accuracy score of Logistic Regression on my data set was ~76%!  That's pretty good I'd say and I was pleased with that number.  I know that number can be improved (will talk about that more next post), but that's a great accuracy rate for a relatively simple model without any extra features I had engineered in my first Amazon post.  But as you all know, accuracy is not the end all for determining model effectiveness.  In walks our friends Precision and Recall
+
+- Precision: What percentage of our predicted helpful reviews are actually helpful reviews?  Aka, when our model says that a review is helpful, what percentage of the time is it actually hepful?
+
+- Recall:  What percentage of helpful reviews did we actually catch with our model?  Example, if there were 1,000 helpful reviews, how many of them did we correctly identify as helpful?
+
+As you can see from the above, there are subtle differences between precision and recall.  In classifying whether a review was helpful or not, I found it most heplful to optimize towards accuracy and precision, not accuracy and recall.  The intuition behind this is because if we are analyzing a specific review, we want to be as certain as possible when our model says that it is either helpful or it is not.  In other words, we want to minimize the number of false positives that our model supplies.  It would be bad for the model to just say that every review is helpful and thus, the recall be 100%.  Our false positive rate would be very high and precision would suffer.
+
+### Visualizing the results
+
+Since error classification is so important, I created a nice d3 visualization that allows you to see how different models perform under different amounts of training data.  You'll see that the % of training data is plotted along the x-axis, the accurarcy score is plotted along the y-axis, and the size of the bubble is governed by the precision.  Below is a static image, but feel free to click on it and it will take you to a web page where you can hover over each model and see it's accuracy, precision, and recall.
 
 
+<figure>
+  <a href="/images/amazon_model_scatter.png"><img style="display:block; margin: 0 auto;" src="/images/amazon_model_scatter.png"></a>
+</figure>
 
 ~ Trevor
 
