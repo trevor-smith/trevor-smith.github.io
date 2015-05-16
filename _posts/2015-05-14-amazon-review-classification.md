@@ -6,9 +6,9 @@ modified: 2015-05-08
 tags: [nlp, natural language processing, python, statistics, metis]
 comments: true
 image:
-  feature: sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: banner1.jpg
+  <!-- credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/ -->
 ---
 Pivot.
 
