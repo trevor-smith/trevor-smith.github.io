@@ -7,10 +7,8 @@ tags: [intro, beginner, jekyll, tutorial]
 comments: true
 image:
   feature: banner1.jpg
-<!--
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
- -->
 ---
 
 One of the great things about R is that everything, I mean EVERYTHING relevant to statistics has been implemented.  Being a former R user, I was aware of it's power, but up until now hadn't found any features missing in Python.  Statsmodels was filling all my linear regression needs and then some.  Dare I say, I even liked the summary output more??

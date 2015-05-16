@@ -7,10 +7,8 @@ tags: [intro, beginner, jekyll, tutorial]
 comments: true
 image:
   feature: banner1.jpg
-<!--
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
- -->
 ---
 
 This last week was all about scraping data.  I had always wanted to learn this skill so I was keen to get started!  But where to begin for a noob like myself??
