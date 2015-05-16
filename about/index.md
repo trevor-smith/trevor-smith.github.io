@@ -5,14 +5,14 @@ modified: 2014-07-31T13:23:02.362000-04:00
 excerpt: "Am I awesome or awkward?  You decide"
 image:
   feature: banner1.jpg
-<!-- 
+
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
- -->
+
 ---
 
 ---
-My name is Trevor and I'm currently a data scientist at Metis.  I use Python as my language of choice for data analysis, but also use R from time to time depending on the problem.  I am also learning common web development languages (Javascript, HTML, CSS) so that I can share my data visualizations over the web interactively :) 
+My name is Trevor and I'm currently a data scientist at Metis.  I use Python as my language of choice for data analysis, but also use R from time to time depending on the problem.  I am also learning common web development languages (Javascript, HTML, CSS) so that I can share my data visualizations over the web interactively :)
 
 My background before Metis was in Marketing Analytics, specifically digital media attribution, where I helped companies and agencies optimize their online marketing campaigns.  I was focused around scalable client implementation, communicating results effectively to our clients, and for helping push our software platform forward with new innovative ideas.
 
