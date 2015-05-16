@@ -7,7 +7,7 @@ tags: [nlp, natural language processing, python, statistics, metis]
 comments: true
 image:
   feature: banner1.jpg
-  credit: Me
+  credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 Pivot.
