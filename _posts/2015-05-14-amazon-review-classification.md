@@ -6,7 +6,7 @@ modified: 2015-05-08
 tags: [nlp, natural language processing, python, statistics, metis]
 comments: true
 image:
-  feature: sample-image-5.jpg
+  feature: sample-image-4.jpg
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
@@ -17,7 +17,7 @@ We had a talk recently about lean startups and one of the themes was the ability
 In my last post I detailed how to read in Amazon reviews data in Python and how to engineer some basic features.  I had planned to use features about the review length and sentence structure in order to classify whether other users would find your Amazon review helpful or not.  This was working OK, but I knew that there was a wealth of data in the actual review that I was not capturing in my analysis.  Not having any natural language processing training, I didn't really know where to start, so I did what any sane person would do; GOOGLE it.
 
 ### Transforming our data
-I came across quite a few different tutorials across the web, but ultimately decided to implement what is called a 'Bag-of-Words' approach.  What this approach does is looks through all of my review text and it creates a sparse matrix of all the words.  Then your classification algorithm of choice can treat each of these words as a feature.  Let's look at an example.
+I came across quite a few different tutorials across the web, but ultimately decided to implement what is called a **'Bag-of-Words'** approach.  What this approach does is looks through all of my review text and it creates a sparse matrix of all the words.  Then your classification algorithm of choice can treat each of these words as a feature.  Let's look at an example.
 
 ### Example
 
@@ -65,9 +65,9 @@ logistic()
 
 Now that we have run this, what did our results tell us?  Well, the accuracy score of Logistic Regression on my data set was ~76%!  That's pretty good I'd say and I was pleased with that number.  I know that number can be improved (will talk about that more next post), but that's a great accuracy rate for a relatively simple model without any extra features I had engineered in my first Amazon post.  But as you all know, accuracy is not the end all for determining model effectiveness.  In walks our friends Precision and Recall
 
-- Precision: What percentage of our predicted helpful reviews are actually helpful reviews?  Aka, when our model says that a review is helpful, what percentage of the time is it actually hepful?
+- **Precision:** What percentage of our predicted helpful reviews are actually helpful reviews?  Aka, when our model says that a review is helpful, what percentage of the time is it actually hepful?
 
-- Recall:  What percentage of helpful reviews did we actually catch with our model?  Example, if there were 1,000 helpful reviews, how many of them did we correctly identify as helpful?
+- **Recall:**  What percentage of helpful reviews did we actually catch with our model?  Example, if there were 1,000 helpful reviews, how many of them did we correctly identify as helpful?
 
 As you can see from the above, there are subtle differences between precision and recall.  In classifying whether a review was helpful or not, I found it most heplful to optimize towards accuracy and precision, not accuracy and recall.  The intuition behind this is because if we are analyzing a specific review, we want to be as certain as possible when our model says that it is either helpful or it is not.  In other words, we want to minimize the number of false positives that our model supplies.  It would be bad for the model to just say that every review is helpful and thus, the recall be 100%.  Our false positive rate would be very high and precision would suffer.
 
@@ -79,6 +79,8 @@ Since error classification is so important, I created a nice d3 visualization th
 <figure>
   <a href="/images/amazon_model_scatter.png"><img style="display:block; margin: 0 auto;" src="/images/amazon_model_scatter.png"></a>
 </figure>
+
+This is a great visualization to see how training size affects accuracy, precision and recall scores, but it doesn't provide anything actionable for the user.  And to that I say, stay tuned for next week!  I'm in the process of building a web app where a user inputs their review, clicks calculate, and out pops whether the model thinks your review will be helpful to other users or not!  It will also show you which words are most and least helpful in your review (perhaps version 2? :P ).  Anyways, enough about bag of words for now!  Next week I'll be refining my model to make the classifications even better.
 
 ~ Trevor
 
