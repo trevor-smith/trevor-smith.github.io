@@ -6,8 +6,8 @@ excerpt: "Am I awesome or awkward?  You decide"
 image:
   feature: banner1.jpg
 
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+<!--   credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/ -->
 
 ---
 
