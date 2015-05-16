@@ -6,9 +6,11 @@ modified: 2015-05-08
 tags: [intro, beginner, jekyll, tutorial]
 comments: true
 image:
-  feature: sample-image-5.jpg
+  feature: banner1.jpg
+<!-- 
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+ -->
 ---
 Recently, I was looking for an interesting data set to hone my classification machine learning skills.  I wanted to solve a problem that could actually have some real world business impact and I wanted the data set to be LARGE.  Well, I got my wish when I stumbled upon this data collected by [Julian McAuley][1]
 

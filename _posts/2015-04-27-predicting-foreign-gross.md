@@ -6,9 +6,11 @@ modified: 2015-04-27
 tags: [intro, beginner, jekyll, tutorial]
 comments: true
 image:
-  feature: sample-image-5.jpg
+  feature: banner1.jpg
+<!-- 
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+ -->
 ---
 As you know from my last post, I had scraped A LOT of movie data from BoxOfficeMojo...but I was unsure what to do with it.  After reviewing the data I had scraped, the problems that seemed the most interesting to me were related to predicting revenue, but predicting how a movie would do in the United States did not seem as interesting to me.  I wanted to solve a prediction problem that had global implications.  I finally settled on trying to predict how much money an American movie would gross in every single country it was released.  This excited me, although I knew it would be challenging!
 
