@@ -73,7 +73,7 @@ As you can see from the above, there are subtle differences between precision an
 
 ### Visualizing the results
 
-Since error classification is so important, I created a nice d3 visualization that allows you to see how different models perform under different amounts of training data.  You'll see that the % of training data is plotted along the x-axis, the accurarcy score is plotted along the y-axis, and the size of the bubble is governed by the precision.  Below is a static image, but feel free to click on it and it will take you to a web page where you can hover over each model and see it's accuracy, precision, and recall.
+Since error classification is so important, I created a nice d3 visualization that allows you to see how different models perform under different amounts of training data.  You'll see that the % of training data is plotted along the x-axis, the accurarcy score is plotted along the y-axis, and the size of the bubble is governed by the precision.  Below is a static image, but I'll be working on hosting a web version shortly.
 
 
 <figure>
