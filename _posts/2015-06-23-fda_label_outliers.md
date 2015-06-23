@@ -192,7 +192,7 @@ def flatten_patients_data():
 
 flatten_patients_data()
 
-
+{% endhighlight %}
 
 ~ Trevor
 
