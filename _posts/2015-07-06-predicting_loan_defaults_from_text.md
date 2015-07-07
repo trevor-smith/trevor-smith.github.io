@@ -156,6 +156,9 @@ TFIDF Accuracy: 81%
 
 We can see that the count representation of the data actually has better accuracy.  Moving forward we will use this representation.
 
+### Modeling the data
+91% accuracy is quite good for a first run using logistic regression.  I will be updating this section as results start coming in from my modeling.
+
 ~ Trevor
 
 [1]: https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation
