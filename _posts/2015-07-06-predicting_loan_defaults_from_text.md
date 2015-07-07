@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Predicting Loan Defaults from Text Data
-excerpt: "Cleaning and using TF-IDF for Classification"
+excerpt: "Cleaning and using Vectorizers for Classification"
 modified: 2015-07-06
 tags: [random forest, svm, tf-idf, nlp, natural language processing, python, statistics, metis]
 comments: true
@@ -23,7 +23,7 @@ However, one way to predict loan default was to use the 'desc' field.  This fiel
 
 
 ### Data Cleaning
-As you can see, there are a number of issues with this text data.  Firstly, they all start off with 'Borrower added on 10/04/13 >', maybe some other dates (which won't be useful in this initial classification), and a '<br>' tag.
+As you can see, there are a number of issues with this text data.  Firstly, they all start off with 'Borrower added on 10/04/13 >', maybe some other dates (which won't be useful in this initial classification), and a 'br' tag.
 
 When classifying using text data, we also want to remove punctuation and lower all the text so that 'Loan', and 'loan' are treated the same.  My code for cleaning this is below.  I use regular expressions.
 
@@ -115,7 +115,7 @@ We can see from the above figure that most loans are current, then some are full
 ### Evaluating the better word representation
 Now that I have defined what a bad loan is, it was time to test which matrix representation was more effective in predicting loan default.
 
-I would just use a random forest classifier
+I would just use a logistic regression classifier because it is quick to train.
 
 {% highlight python %}
 ### IMPORTS ###
@@ -150,6 +150,9 @@ print "tfidf vectorizer: "
 print "recall: " + str(recall) + " precision: " + str(precision) + " accuracy: " + str(accuracy)
 
 {% endhighlight %}
+
+Count Accuracy: 91%
+TFIDF Accuracy: 81%
 
 We can see that the count representation of the data actually has better accuracy.  Moving forward we will use this representation.
 
