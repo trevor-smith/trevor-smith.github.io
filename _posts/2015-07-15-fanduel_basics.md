@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basics to predicting NBA fanduel points
-excerpt: "Using linear and non-linear models"
+excerpt: "Using linear and non-linear models - 0.76 r-squared"
 modified: 2015-07-15
 tags: [random forest, svm, tf-idf, nlp, natural language processing, python, statistics, metis]
 comments: true
@@ -12,6 +12,7 @@ image:
 ---
 ### Intro
 [Project link][1]
+
 
 Many of you may not know this, but I absolutely LOVE fantasy sports, specifically NBA.  I've been participating in leagues for the last 4 years, but it wasn't until this past year that I tried my luck on daily fantasy NBA on fanduel.com.  I had some success (had the top score one night out of 8,000 people), but I knew I could do better.  Basketball is known as the most consistent sport out there, so why was I not winning every single night?
 
