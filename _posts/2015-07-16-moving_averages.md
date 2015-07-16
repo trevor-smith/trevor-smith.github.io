@@ -30,7 +30,7 @@ Why do we care? Because basketball, just like any sport, is about hot and cold s
 In the context of this analysis, I am going to start by creating a moving average based on just the player's fanduel scores.  So in Westbrook's case, I will be saying "what were his average fanduel points for the last 3 games, 5 games, 10 games?"
 
 <figure>
-  <a href="/images/fanduel_post1_2.jpg"><img style="display:block; margin: 0 auto;" src="/images/fanduel_post1_2.jpg"></a>
+  <a href="/images/fanduel_post2_2.jpg"><img style="display:block; margin: 0 auto;" src="/images/fanduel_post2_2.jpg"></a>
 </figure>
 
 
@@ -60,7 +60,7 @@ Ok, now assuming we have already split our data into training and test or are go
 
 As yesterday, I'm just using the SVM regressor with the RBF kernel.  Not tuning the C or Gamma parameters yet.
 
-** Results: ** 94% r-squared! Very great score for again somewhat minimal work.  I'll be pretty pleased if on average I can explain 94% of variations in fanduel scores with this model.  By the time we are two or so weeks into the season, my model should be outputting great scores!
+**Results:** 94% r-squared! Very great score for again somewhat minimal work.  I'll be pretty pleased if on average I can explain 94% of variations in fanduel scores with this model.  By the time we are two or so weeks into the season, my model should be outputting great scores!
 
 {% highlight python %}
 from sklearn.svm import SVR
