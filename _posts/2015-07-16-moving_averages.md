@@ -14,7 +14,7 @@ image:
 [Project link][1]
 
 
-Ok, last night was my first post around fanduel and it had me very excited!  I was able to create a model that explained 76% of the variation in the fanduel scores I was seeing on a nightly basis!  But there were so many other things I wanted to try that would improve predictive accuracy; one of them beingt moving averages!  This post details how I used moving averages to improve predictions up to 94%
+Ok, last night was my first post around fanduel and it had me very excited!  I was able to create a model that explained 76% of the variation in the fanduel scores I was seeing on a nightly basis!  But there were so many other things I wanted to try that would improve predictive accuracy; one of them being moving averages!  This post details how I used moving averages to improve the model's explanation of variations in fanduel scores to 94%!
 
 <figure>
   <a href="/images/fanduel_post2_1.gif"><img style="display:block; margin: 0 auto;" src="/images/fanduel_post2_1.gif"></a>
@@ -23,7 +23,7 @@ Ok, last night was my first post around fanduel and it had me very excited!  I w
 
 
 ### What's a moving average?
-A moving average is just an average that keeps updating as new data is available.  For example, a 3 day moving average takes your data from the last 3 days and computes and average.  The next day, the previous 3 days of data are used to compute and updated moving average.  Moving averages can help to identify trends.
+A [moving average][2] is just an average that keeps updating as new data is available.  For example, a 3 day moving average takes your data from the last 3 days and computes and average.  The next day, the previous 3 days of data are used to compute and updated moving average.  Moving averages can help to identify trends.
 
 Why do we care? Because basketball, just like any sport, is about hot and cold streaks.  Sure, Russell Westbrook is phenomenal all year long, but there's definitely periods where he is doing better and worse.  If Kevin Durant is playing, Westbrooks moving averages are going to likely be lower than when Kevin Durant was injured, and the moving average calculations are going to capture that!
 
@@ -35,7 +35,7 @@ In the context of this analysis, I am going to start by creating a moving averag
 
 
 ### Calculating our moving average
-In order to calculate a moving average, pandas makes it very easy.  There is a 'rolling_mean' function that you can call which calculates a moving average for you.  You just need to specify the column and the number of periods.
+In order to calculate a moving average, pandas makes it very easy.  There is a [rolling_mean][3] function that you can call which calculates a moving average for you.  You just need to specify the column and the number of periods.
 
 In order to do this, you must first sort your data by player name, and then by date, so that performances are ordered properly.  The code to sort and calculate a moving average is below:
 
@@ -58,7 +58,7 @@ So this is great, but you'll notice now that there are NaNs for some of the movi
 ### Predicting
 Ok, now assuming we have already split our data into training and test or are going to do cross validation, it's time to predict!  I'm using all the same features as yesterday, but will now add the moving averages in today.  I wasn't able to get the log transform to work on this data set, so I will be using the regular fanduel score as the dependent variable.  Another note is that I did not have time to impute the season averages or any other missing values from the moving average computation, so I have just dropped rows that contain NaN.  Not ideal, but I will fix this in the long run.  Still, there are many players and games that can still be predicted and the results are great.
 
-As yesterday, I'm just using the SVM regressor with the RBF kernel.  Not tuning the C or Gamma parameters yet.
+As yesterday, I'm just using the [SVM regressor][4] with the RBF kernel.  Not tuning the C or Gamma parameters yet.
 
 **Results:** 94% r-squared! Very great score for again somewhat minimal work.  I'll be pretty pleased if on average I can explain 94% of variations in fanduel scores with this model.  By the time we are two or so weeks into the season, my model should be outputting great scores!
 
@@ -80,8 +80,8 @@ Another way to predict minutes is to look for inuries.  If a starting PG goes do
 ~ Trevor
 
 [1]: https://github.com/trevor-smith/fanduel_nba
-[2]: https://radimrehurek.com/gensim/
-[3]: http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html
-[4]: http://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score
+[2]: https://en.wikipedia.org/wiki/Moving_average
+[3]: http://pandas.pydata.org/pandas-docs/stable/computation.html#moving-rolling-statistics-moments
+[4]: http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR
 [5]: https://twitter.com/bo_p
 [6]: https://twitter.com/planarrowspace
