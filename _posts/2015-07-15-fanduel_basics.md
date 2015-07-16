@@ -38,10 +38,15 @@ As you can see, there is the data set name, the player, position, their team, wh
 This section will go over how fanduel points are calculated.  The more fanduel points a player receives, the more valuable they are.  Different stats are worth different amount of fanduel points.  Official scoring is below:
 
 **PTS** = 1 per point
+
 **TOT** = 1.2 per rebound
+
 **A** = 1.5 per assist
+
 **BL** = 2 per block
+
 **ST** = 2 per steal
+
 **TO** = -1 per turover
 
 As you can see, points are just worth themself, where as 1 rebound in the game is actually worth 1.2 fanduel points and 1 block is worth 2 fanduel points.  Turnovers hurt your fanduel points.
