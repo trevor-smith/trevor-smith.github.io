@@ -110,8 +110,10 @@ Winner!! SVM with an RBF kernel seems to perform the best out of the box.  I'm p
 
 For how I actually conducted this analysis, please visit my github repo for this project:  [fanduel_nba][1]
 
-### Conculsion
+### Conclusion
 I literally started looking at this data today, so no groundbreaking analysis just yet.  But in the next few weeks I plan to add in data on specific player matchups (aka how good of a defender they are, or how offensively talented they are), vegas lines (higher vegas lines are expected to score more fanduel points), and other player efficiency ratings.
+
+**UPDATE:** By transforming the fanduel_score variable via a log transform, I was able to improve the R^2 to 76%!
 
 Here's some of the coefficients from the linear regression analysis so far, just for fun!
 
