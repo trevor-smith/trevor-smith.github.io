@@ -103,6 +103,7 @@ Pretty good!  Up next, a random forest regressor with 1,000 trees:
 Hmm, not as good, perhaps a grid search tuning session is in order.  Next up I tried an SVM with a linear kernel and an rbf kernel:
 
 **SVM - Linear:** 0.686
+
 **SVM - RBF:**  0.700
 
 Winner!! SVM with an RBF kernel seems to perform the best out of the box.  I'm pretty pleased that 70% of the variation in fanduel scores can be explained by this basic model.  The SVMs ran in under one minute so some grid search tuning will be done in the future.
