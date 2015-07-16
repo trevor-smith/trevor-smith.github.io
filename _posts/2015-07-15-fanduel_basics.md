@@ -20,7 +20,7 @@ Well, for one thing I wasn't doing my own research.  I was getting my analytics 
 The night I won.
 
 <figure>
-  <a href="/images/IMG_5876.png"><img style="display:block; margin: 0 auto;" src="/images/IMG_5876.png"></a>
+  <a href="/images/IMG_5876.PNG"><img style="display:block; margin: 0 auto;" src="/images/IMG_5876.PNG"></a>
 </figure>
 
 
