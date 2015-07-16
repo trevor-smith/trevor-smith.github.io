@@ -37,12 +37,12 @@ As you can see, there is the data set name, the player, position, their team, wh
 ### Calculating fanduel points
 This section will go over how fanduel points are calculated.  The more fanduel points a player receives, the more valuable they are.  Different stats are worth different amount of fanduel points.  Official scoring is below:
 
-PTS = 1 per point
-TOT = 1.2 per rebound
-A = 1.5 per assist
-BL = 2 per block
-ST = 2 per steal
-TO = -1 per turover
+**PTS** = 1 per point
+**TOT** = 1.2 per rebound
+**A** = 1.5 per assist
+**BL** = 2 per block
+**ST** = 2 per steal
+**TO** = -1 per turover
 
 As you can see, points are just worth themself, where as 1 rebound in the game is actually worth 1.2 fanduel points and 1 block is worth 2 fanduel points.  Turnovers hurt your fanduel points.
 
@@ -89,18 +89,18 @@ Now our data is prepared, it's time to start predicting!  All models will be eva
 
 First I'll start with our trusty old friend, linear regression.  After splitting our data into training and test, it performs as follows:
 
-Linear Regression:  0.691
+**Linear Regression:**  0.691
 
 Pretty good!  Up next, a random forest regressor with 1,000 trees:
 
-Random Forest:  0.667
+**Random Forest:**  0.667
 
 Hmm, not as good, perhaps a grid search tuning session is in order.  Next up I tried an SVM with a linear kernel and an rbf kernel:
 
-SVM - Linear:. 0.686
-SVM - RBF:  0.700
+**SVM - Linear:** 0.686
+**SVM - RBF:**  0.700
 
-Winner!! SVM with an RBF kervel seems to perform the best out of the box.  I'm pretty pleased that 70% of the variation in fanduel scores can be explained by this basic model.  The SVMs ran in under one minute so some grid search tuning will be done in the future.
+Winner!! SVM with an RBF kernel seems to perform the best out of the box.  I'm pretty pleased that 70% of the variation in fanduel scores can be explained by this basic model.  The SVMs ran in under one minute so some grid search tuning will be done in the future.
 
 For how I actually conducted this analysis, please visit my github repo for this project:  [fanduel_nba][1]
 
