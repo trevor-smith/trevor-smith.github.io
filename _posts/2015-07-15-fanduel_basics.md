@@ -13,7 +13,7 @@ image:
 ### Intro
 [Project link][1]
 
-Many of you may not know this, but I absolutely LOVE fantasy sports, specifically NBA.  I've been participating in leagues for the last 4 years, but it wasn't until this past year that I tried my luck on daily fantasy NBA on fanduel.com.  I had some success (had the top score one night out of 8,000 people), but I knew I could do better.  Basektball is known as the most consistent sport out there, so why was I not winning every single night?
+Many of you may not know this, but I absolutely LOVE fantasy sports, specifically NBA.  I've been participating in leagues for the last 4 years, but it wasn't until this past year that I tried my luck on daily fantasy NBA on fanduel.com.  I had some success (had the top score one night out of 8,000 people), but I knew I could do better.  Basketball is known as the most consistent sport out there, so why was I not winning every single night?
 
 Well, for one thing I wasn't doing my own research.  I was getting my analytics from some other websites who either A) came up with their own predictions, or B) just went off of their biased opinions of players.  What I wanted to do is take the guessing game completely out of all of this so what I've done is downloaded stats from 2012 - 2014 and will attempt to create my own nightly predictions and win some money next season!
 
